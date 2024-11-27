@@ -1,0 +1,12 @@
+/* Laptops - Common Viewports - Desktop */
+@media (max-width: 1024px) {
+
+}
+/* Tablets - Smaller Laptops */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+/* Mobile - Smartphones - Common Viewports */
+@media (min-width: 360px) and (max-width: 767px) {
+
+}
