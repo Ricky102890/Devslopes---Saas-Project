@@ -190,7 +190,7 @@ nav {
     display: block;
     margin: 0 auto;
 }
-/* Options */
+/* Section - Options */
 .options {
     width: 100%;
     height: auto;
@@ -222,6 +222,7 @@ nav {
     width: 100%;
     height: auto;
     position: relative;
+    margin-bottom: 8rem;
 }
 .video .img {
     width: 100%;
@@ -241,4 +242,93 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+/* Section - Testimonials */
+.testimonials {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    position: relative;
+}
+.testimonial-imgs {
+    width: 100%;
+    height: auto;
+}
+.testimonial-imgs .img {
+    display: block;
+    width: 375px;
+    height: auto;
+    margin-left: auto;
+}
+.testimonial-imgs .img img {
+    width: 100%;
+    height: auto;
+}
+.testimonial-imgs .bkg {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    left: 3rem;
+    bottom: 0;
+    z-index: -1;
+}
+.testimonial-header {
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+}
+.testimonial-header .img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 2rem;
+}
+.testimonial-header .img img {
+    width: 100%;
+    height: auto;
+}
+.testimonial-header h3 {
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+.testimonial-name {
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.testimonial-name h4 {
+}
+.testimonial-name span {
+    display: block;
+    color: gray;
+    font-size: 12px;
+}
+
+/* Section - Trusted Services / Servicers */
+.trusted-servicers {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 4rem 0;
+}
+.servicers {
+    flex: 1;
+}
+.servicers .img {
+    width: 100%;
+    height: auto;
+}
+.servicers .img img {
+    width: 100%;
+    height: auto;
 }
