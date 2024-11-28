@@ -3,21 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 /* Root References */
 :root {
-    --size_px_rem_5: ;
-    --size_px_rem_10: ;
-    --size_px_rem_15: ;
-    --size_px_rem_20: ;
-    --size_px_rem_30: ;
-    --size_px_rem_40: ;
-    --size_px_rem_50: ;
-    --size_px_rem_60: ;
-    --size_px_rem_80: ;
-    --size_px_rem_100: ;
-    --size_px_rem_130: ;
-    --size_px_rem_150: ;
+    --clr_skyBlue: #2476FF;
+    --font_link_clr: #677788;
+    --font_clr_gray: #677788;
+    --btn_bkg_clr: #2476FF;
+    --bkg_clr_offWhite: #F8FAFE;
+    --White: #ffffff;
+    --text_lineHeight: 14.52px;
 }
 /* HTML */
 html {
