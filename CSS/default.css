@@ -12,9 +12,12 @@
     --font_clr_gray: #677788;
     --btn_bkg_clr: #2476FF;
     --bkg_clr_offWhite: #F8FAFE;
+    --bkg_clr_offWhite2: #E6E8F2;
     --White: #ffffff;
     --Black: #000000;
     --text_lineHeight: 14.52px;
+    --hireUs_bkg: #20335b;
+    --font_family_sfPro: 'SF Pro', sans-serif;
 }
 /* HTML */
 html {
