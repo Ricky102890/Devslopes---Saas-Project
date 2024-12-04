@@ -632,7 +632,6 @@ nav {
     line-height: 22px;
     color: var(--font_clr_gray);
 }
-
 /* Section - Hire Us */
 .hire-us {
     width: 100%;
@@ -757,20 +756,20 @@ nav {
     width: 100%;
     height: auto;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
     background: var(--White);
+    gap: 20px;
 }
 .hire-us .col-two .form-data {
     display: flex;
     flex-direction: column;
     gap: 37px;
-
+    border: 1px solid #E6E8F2;
 }
 .form-data input {
     border: none;
-}
-.hire-us .col-two div {
-
 }
 .hire-us .col-two div p {
     font-size: 16px;
@@ -824,19 +823,22 @@ nav {
 .hire-us .col-two form .group-four textarea {
     width: 100%;
     height: auto;
+    padding: 10px;
     background: var(--bkg_offWhite2);
-    border: none;
+    border: 1px solid #E6E8F2;
 }
 .hire-us .col-two form .group-five {
     display: grid;
     grid-template-columns: 1fr 8fr;
-    gap: 16px;
+    gap: 20px;
 }
 .hire-us .col-two form .group-five input {
-    width: 25px;
-    height: 24px;
+    width: 18px;
+    height: 17px;
     padding-top: 4px;
     gap: 10px;
+    cursor: pointer;
+    align-self: baseline;
 }
 .hire-us .col-two form .group-five span {
     width: 100%;
@@ -870,5 +872,28 @@ nav {
     color: var(--clr_skyBlue);
 }
 .hire-us .col-two form > button {
-
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 25px;
+    background: var(--btn_bkg_clr);
+    text-align: center;
+    border-radius: 30px;
+    white-space: nowrap;
+    color: var(--White);
+    font-size: 12px;
+    font-weight: 500;
+    gap: 24px;
+    cursor: pointer;
+}
+footer {
+    width: 100%;
+    max-width: 1026px;
+    height: auto;
+    margin: auto;
+    padding: 90px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
