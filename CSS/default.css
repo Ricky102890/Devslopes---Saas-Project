@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
 }
 /* Root References */
 :root {
@@ -17,6 +16,7 @@
     --Black: #000000;
     --text_lineHeight: 14.52px;
     --hireUs_bkg: #20335b;
+    --font_family-inter: 'Inter', sans-serif;
     --font_family_sfPro: 'SF Pro', sans-serif;
 }
 /* HTML */
