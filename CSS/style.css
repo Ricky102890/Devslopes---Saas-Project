@@ -1019,6 +1019,7 @@ footer .footer-top .footer-features ul li a:nth-last-child() {
     flex-direction: row;
     align-items: center;
     gap: 6px;
+    flex: 1;
 }
 .footer-bar .link-tree a, .footer-bar .link-tree span {
     width: fit-content;
@@ -1032,9 +1033,11 @@ footer .footer-btm .footer-bar .link-tree .blue {
     color: var(--clr_skyBlue);
 }
 .footer-bar .item .social-nation {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex: 1;
 }
 .footer-bar .item .social-nation .nation-wrapper {
     display: flex;
