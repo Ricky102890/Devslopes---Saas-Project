@@ -747,7 +747,6 @@ nav {
     height: 60px;
     border-radius: 30px;
 }
-
 .hire-us .col-two {
     padding: 30px;
     gap: 10px;
@@ -757,15 +756,17 @@ nav {
     height: auto;
     padding: 30px;
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     border-radius: 10px;
     background: var(--White);
-    gap: 20px;
+    gap: 37px;
 }
 .hire-us .col-two .form-data {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 37px;
+    gap: 20px;
     border: 1px solid #E6E8F2;
 }
 .form-data input {
@@ -777,45 +778,38 @@ nav {
     line-height: 24px;
     color: var(--Black);
 }
+.hire-us .col-two form .group-one, .hire-us .col-two form .group-two {
+    border-radius: 5px;
+    border: 1px solid var(--bkg_offWhite2);
+    padding: 10px;
+    gap: 10px;
+}
 .hire-us .col-two form .group-one{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    gap: 10px;
-}
-.hire-us .col-two form .group-one input {
-
+    gap: 20px;
 }
 .hire-us .col-two form .group-two {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    gap: 10px;
-}
-.hire-us .col-two form .group-two input {
-
-}
-.group-three {
-    display: flex;
     gap: 20px;
 }
-.hire-us .col-two form .group-three div {
-    width: 100%;
+.group-three {
+    width: 392px;
     display: flex;
-}
-.hire-us .col-two form .group-three select {
-    border: none;
+    gap: 20px;
     flex: 1;
 }
-.hire-us .col-two form .group-three label {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 24px;
-    font-family: var(--font_family_sfPro);
+.hire-us .col-two form .group-three select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    border-radius: 5px;
+    border: 1px solid var(--bkg_offWhite2);
 }
-.hire-us .col-two form .group-three option {
-
-}
+/* Group Four */
 .hire-us .col-two form .group-four {
     width: 100%;
     height: auto;
@@ -826,6 +820,9 @@ nav {
     padding: 10px;
     background: var(--bkg_offWhite2);
     border: 1px solid #E6E8F2;
+    font-size: 14px;
+    font-weight: 510;
+    font-family: var(--font_family_sfPro);
 }
 .hire-us .col-two form .group-five {
     display: grid;
@@ -839,34 +836,48 @@ nav {
     gap: 10px;
     cursor: pointer;
     align-self: baseline;
+    position: relative;
+    top: 10px;
 }
-.hire-us .col-two form .group-five span {
-    width: 100%;
+.hire-us .col-two form .group-five > div {
+    width: 392px;
     height: auto;
-    display: block;
-    font-size: 14px;
-    font-weight: 510;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 16px;
+}
+.hire-us .col-two form .group-five a {
+    width: 132px;
+    height: 22px;
+    padding: 0;
+    font-family: var(--font_family_sfPro);
+    font-weight: 700;
     line-height: 22px;
     color: var(--font_clr_gray);
-    font-family: 'SF Pro', sans-serif;
-    margin-bottom: 10px;
+    border-bottom: 1px dotted var(--font_clr_gray);
 }
 .group-five .flex{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 28px;
 }
-.hire-us .col-two form .group-five a {
-    width: 100%;
-    /* max-width: 131px; */
-    height: auto;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 22px;
+.hire-us .col-two form .group-five span {
+    width: 351px;
+    height: 44px;
+    display: block;
     color: var(--font_clr_gray);
+    font-size: 14px;
+    font-weight: 510;
+    line-height: 22px;
+    font-family: var(--font_family_sfPro);
+    gap: 10px;
+}
+.hire-us .col-two form .group-five a {
+    display: inline-block;
 }
 .hire-us .col-two form .group-five a:last-child {
     color: var(--clr_skyBlue);
@@ -1023,7 +1034,7 @@ footer .footer-top .footer-features ul li a:nth-last-child() {
 .footer-company li:nth-child(2) button {
     width: 55px;
     height: 14px;
-    font-family: var(--font_family_inter);
+    font-family: var(--font_family_sfPro);
     padding: 2px 4px;
     gap: 10px;
 }
@@ -1074,6 +1085,7 @@ footer .footer-btm .footer-bar .link-tree .blue {
     justify-content: flex-end;
     margin-right: 0;
     margin-left: auto;
+    gap: 20px;
     flex: 1;
 }
 .footer-bar .social-nation .socials {
@@ -1082,10 +1094,24 @@ footer .footer-btm .footer-bar .link-tree .blue {
     align-items: center;
     gap: 20px;
 }
+.footer-bar .social-nation .socials a  {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    gap: 10px;
+    text-align: center;
+    vertical-align: center;
+    background: var(--bkg_skyBlue);
+}
+
 .footer-bar .social-nation .nation-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 20px;
 }
 .footer-btm .social-nation .img {
     width: fit-content;
@@ -1104,9 +1130,34 @@ footer .footer-btm .footer-bar .link-tree .blue {
     width: 16px;
     height: auto;
 }
+.footer-btm .social-nation .nation-select {
+    display: flex;
+    align-items: center;
+}
 .footer-btm .social-nation select {
     display: inline-block;
     outline: none;
     border: none;
     padding: 0 13px;
+}
+.footer-btm .social-nation .nation-img-wrapper {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+.footer-btm .social-nation .nation-img-wrapper img {
+    width: 14px;
+    height: 14px;
+}
+.footer-rights {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 21px;
+    font-family: var(--font_family_sfPro);
+    font-weight: 510;
+    font-size: 14px;
+    color: var(--font_clr_gray);
 }
