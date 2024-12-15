@@ -1,3 +1,9 @@
+/* Header */
+header {
+    width: 100%;
+    background: url(/Media/backgrounds/background-top.svg);
+    background-position: 10% 50%;
+}
 /* Navigation */
 /* Front Logo */
 nav .img img {
@@ -21,6 +27,9 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+nav button[aria-controls="navigationBar"] {
+    display: none;
 }
 .list-item {
     width: fit-content;
@@ -50,6 +59,7 @@ nav {
     font-size: 12px;
     font-weight: 700;
     line-height: 14.52px;
+    cursor: pointer;
 }
 .btn {
 }
@@ -119,10 +129,6 @@ nav {
     height: auto;
     margin: 0;
     padding: 2rem 0;
-    background: url(/Media/backgrounds/background-top.svg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -153,7 +159,7 @@ nav {
 .benefits-wrapper {
     width: 100%;
     height: auto;
-    padding: 120px 0 80px;
+    padding: 10px 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     align-items: center;
@@ -197,11 +203,11 @@ nav {
 .mission {
     width: 100%;
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    padding: 0 30px 80px;
+    padding: 80px 30px 80px 30px;
 }
 .mission-header {
     width: 100%;
@@ -209,6 +215,8 @@ nav {
     background: var(--bkg_offWhite);
     margin: 26px 0;
     padding: 10px 30px;
+    gap: 26px;
+    flex: 1;
 }
 .mission-header h2 {
     font-size: 26px;
@@ -226,10 +234,13 @@ nav {
     font-weight: 500;
     line-height: 14.52px;
 }
-.mission .img {
+.mission .mission-img {
     width: 100%;
+    max-width: 504px;
+    max-height: 353px;
+    flex: 1;
 }
-.mission .img img {
+.mission .mission-img img {
     width: 100%;
     height: auto;
 }
@@ -445,7 +456,7 @@ nav {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    row-gap: 10px;
+    gap: 60px;
     padding-bottom: 120px;
 }
 .pricing-header {
@@ -805,9 +816,10 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 16px;
+    padding: 10px 16px 10px 10px;
     border-radius: 5px;
     border: 1px solid var(--bkg_offWhite2);
+    flex: 1;
 }
 /* Group Four */
 .hire-us .col-two form .group-four {
@@ -827,7 +839,7 @@ nav {
 .hire-us .col-two form .group-five {
     display: grid;
     grid-template-columns: 1fr 8fr;
-    gap: 20px;
+    gap: 16px;
 }
 .hire-us .col-two form .group-five input {
     width: 18px;
@@ -840,22 +852,10 @@ nav {
     top: 10px;
 }
 .hire-us .col-two form .group-five > div {
-    width: 392px;
-    height: auto;
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    gap: 16px;
-}
-.hire-us .col-two form .group-five a {
-    width: 132px;
-    height: 22px;
-    padding: 0;
-    font-family: var(--font_family_sfPro);
-    font-weight: 700;
-    line-height: 22px;
-    color: var(--font_clr_gray);
-    border-bottom: 1px dotted var(--font_clr_gray);
+    gap: 10px;
 }
 .group-five .flex{
     width: 100%;
@@ -864,6 +864,21 @@ nav {
     flex-direction: row;
     align-items: center;
     gap: 28px;
+}
+.group-five .flex a {
+    width: 131px;
+    height: 22px;
+    padding: 0;
+    font-family: var(--font_family_sfPro);
+    font-weight: 700;
+    line-height: 22px;
+    color: var(--font_clr_gray);
+    border-bottom: 1px dotted var(--font_clr_gray);
+    flex: 1;
+    text-underline-offset: ;
+}
+.group-five .flex a:nth-child(2) {
+    border-color: var(--clr_skyBlue);
 }
 .hire-us .col-two form .group-five span {
     width: 351px;
@@ -1144,6 +1159,7 @@ footer .footer-btm .footer-bar .link-tree .blue {
     width: fit-content;
     display: flex;
     align-items: center;
+    background: var(--bkg_skyBlue);
 }
 .footer-btm .social-nation .nation-img-wrapper img {
     width: 14px;
