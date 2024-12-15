@@ -10,19 +10,21 @@
     <link rel="stylesheet" href="/Assets/fontawesome-free-6.6.0-web/">
     <!-- CSS -->
     <link rel="stylesheet" href="/CSS/default.css">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <!-- <link rel="stylesheet" href="/CSS/style.css"> -->
     <link rel="stylesheet" href="/CSS/media.css">
     <!-- JavaScript -->
     <script src="/JS/script.js" defer></script>
 </head>
 <body>
+    <!-- Default Container / Responsive Container -->
+    <div class="container">
     <header>
         <!-- Navigation -->
         <nav>
             <div class="img">
                 <img src="/Media/project_logo/logo.svg" alt="Front Logo">
             </div>
-            <ul class="navbar" id="navigationBar">
+            <ul class="navbar">
                 <li class="list-item"><a href="index.html">Home</a></li>
                 <li class="list-item"><a href="index.html">Features</a></li>
                 <li class="list-item"><a href="index.html">Learn</a></li>
@@ -30,40 +32,40 @@
                 <li class="list-item"><a href="index.html">Hire us</a></li>
                 <li class="list-item"><button class="btn">Buy Now</button></li>
             </ul>
-            <button id="hamburger" aria-controls="navigationBar" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+            <button aria-controls="navbar" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
         </nav>
-    </header>
-        <!-- Default Container / Responsive Container -->
-        <div class="container">
-            <!-- Hero Wrapper -->
-            <div class="hero-wrapper">
-
-                <div class="hero-header">
+        <!-- Hero Wrapper -->
+        <div class="hero-wrapper">
+            <div class="hero-header">
+                <div>
                     <h2>Empowering teams with the freedom</h2>
                     <span>Own the unlimited power of the web development</span>
-                    <div class="hero-buttons">
-                        <button>
-                            <i class="fa-regular fa-circle-play"></i>
-                            <span>Play Video</span>
-                        </button>
-                        <a href="#">Learn more</a>
-                    </div>
                 </div>
-                <div class="hero-icon-container">
-                    <div class="img-lrg"><img src="/Media/logo_icons/asana.png" alt="Logo Icon"></div>
-                    <div class="img-lrg"><img src="/Media/logo_icons/atlassian.png" alt="Logo Icon"></div>
-                    <div class="img-lrg"><img src="/Media/logo_icons/calendar.png" alt="Logo Icon"></div>
-                    <div class="img-sm"><img src="/Media/logo_icons/google-A.png" alt="Logo Icon"></div>
-                    <div class="img-sm"><img src="/Media/logo_icons/google.png" alt="Logo Icon"></div>
-                    <div class="img-lrg"><img src="/Media/logo_icons/paypal.jpg" alt="Logo Icon"></div>
-                    <div class="img-lrg"><img src="/Media/logo_icons/weave.png" alt="Logo Icon"></div>
+                <div class="hero-buttons">
+                    <button>
+                        <i class="fa-regular fa-circle-play"></i>
+                        <span>Play Video</span>
+                    </button>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
-        <!-- Section - Key Benefits -->
-        <div class="benefits">
-            <h2>Key Benefits</h2>
-            <span>Design faster with a growing array of beautiful templates</span>
+            <div class="hero-icon-container">
+                <div class="img-lrg float"><img src="/Media/logo_icons/asana.png" alt="Logo Icon"></div>
+                <div class="img-lrg float"><img src="/Media/logo_icons/atlassian.png" alt="Logo Icon"></div>
+                <div class="img-lrg float"><img src="/Media/logo_icons/calendar.png" alt="Logo Icon"></div>
+                <div class="img-sm float"><img src="/Media/logo_icons/google-A.png" alt="Logo Icon"></div>
+                <div class="img-sm float"><img src="/Media/logo_icons/google.png" alt="Logo Icon"></div>
+                <div class="img-lrg float"><img src="/Media/logo_icons/paypal.jpg" alt="Logo Icon"></div>
+                <div class="img-lrg float"><img src="/Media/logo_icons/weave.png" alt="Logo Icon"></div>
+            </div>
         </div>
+    </header>
+        <!-- Section - Key Benefits -->
+    <div class="key-benefits">
+            <div class="benefits">
+                <h2>Key Benefits</h2>
+                <span>Design faster with a growing array of beautiful templates</span>
+            </div>
         <div class="benefits-wrapper">
             <div class="benefit-item">
                 <div class="benefit-content">
@@ -77,7 +79,7 @@
             </div>
             <div class="benefit-item">
                 <div class="benefit-content">
-                    <div class="img"><img src="/Media/icons/responsive.svg" alt="Responsive Icon"></div>
+                    <div class="img"><img src="/Media/icons/customizable.svg" alt="Responsive Icon"></div>
                     <h4>Customizable</h4>
                     <p>
                         It is a long established fact that a reader will be distracted by the readable content lof a page when looking at it's layout.
@@ -87,7 +89,7 @@
             </div>
             <div class="benefit-item">
                 <div class="benefit-content">
-                    <div class="img"><img src="/Media/icons/responsive.svg" alt="Responsive Icon"></div>
+                    <div class="img"><img src="/Media/icons/premium.svg" alt="Responsive Icon"></div>
                     <h4>Premium<button>sketch</button></h4>
                     <p>
                         It is a long established fact that a reader will be distracted by the readable content lof a page when looking at it's layout.
@@ -97,7 +99,7 @@
             </div>
             <div class="benefit-item">
                 <div class="benefit-content">
-                    <div class="img"><img src="/Media/icons/responsive.svg" alt="Responsive Icon"></div>
+                    <div class="img"><img src="/Media/icons/documentation.svg" alt="Responsive Icon"></div>
                     <h4>Documentation</h4>
                     <p>
                         It is a long established fact that a reader will be distracted by the readable content lof a page when looking at it's layout.
@@ -106,6 +108,8 @@
                 </div>
             </div>
         </div>
+    </div>
+        
         <!-- Section - Mission  -->
         <div class="mission">
             <div class="mission-header">
@@ -279,7 +283,7 @@
                     </div>
                     <div>
                         <p>
-                            "I love front! I love the ease of use, I love the <br>fact that I have total creative freedom..."
+                            "I love front! I love the ease of use, I love the fact that I have total creative freedom..."
                         </p>
                     </div>
                 </div>
