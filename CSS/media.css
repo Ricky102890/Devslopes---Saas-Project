@@ -3,12 +3,7 @@
 }
 /* Tablets - Smaller Laptops */
 @media (min-width: 768px) and (max-width: 1023px) {
-    nav button[aria-controls="navigationBar"] {
-        display: inline-block;
-    }
-    [aria-expanded="false"] ~ .navbar {
-        display: none;
-    }
+    
 }
 /* Mobile - Smartphones - Common Viewports */
 @media (min-width: 360px) and (max-width: 767px) {
