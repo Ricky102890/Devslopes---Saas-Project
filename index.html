@@ -16,15 +16,16 @@
     <script src="/JS/script.js" defer></script>
 </head>
 <body>
-    <!-- Default Container / Responsive Container -->
     <div class="container">
     <header>
-        <!-- Navigation -->
         <nav>
+
             <div class="img">
                 <img src="/Media/project_logo/logo.svg" alt="Front Logo">
             </div>
-            <ul class="navbar">
+            
+            <button aria-controls="navbar" aria-expanded="true" id="hamburger"><i class="fa-solid fa-bars"></i></button>
+            <ul class="navbar" id="navbar">
                 <li class="list-item"><a href="index.html">Home</a></li>
                 <li class="list-item"><a href="index.html">Features</a></li>
                 <li class="list-item"><a href="index.html">Learn</a></li>
@@ -32,15 +33,18 @@
                 <li class="list-item"><a href="index.html">Hire us</a></li>
                 <li class="list-item"><button class="btn">Buy Now</button></li>
             </ul>
-            <button aria-controls="navbar" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+
+
         </nav>
-        <!-- Hero Wrapper -->
+
         <div class="hero-wrapper">
+
             <div class="hero-header">
                 <div>
                     <h2>Empowering teams with the freedom</h2>
                     <span>Own the unlimited power of the web development</span>
                 </div>
+
                 <div class="hero-buttons">
                     <button>
                         <i class="fa-regular fa-circle-play"></i>
@@ -48,7 +52,9 @@
                     </button>
                     <a href="#">Learn more</a>
                 </div>
+
             </div>
+
             <div class="hero-icon-container">
                 <div class="img-lrg float"><img src="/Media/logo_icons/asana.png" alt="Logo Icon"></div>
                 <div class="img-lrg float"><img src="/Media/logo_icons/atlassian.png" alt="Logo Icon"></div>
@@ -58,10 +64,11 @@
                 <div class="img-lrg float"><img src="/Media/logo_icons/paypal.jpg" alt="Logo Icon"></div>
                 <div class="img-lrg float"><img src="/Media/logo_icons/weave.png" alt="Logo Icon"></div>
             </div>
+
         </div>
+
     </header>
-        <!-- Section - Key Benefits -->
-    <div class="key-benefits">
+    <!-- <div class="key-benefits">
             <div class="benefits">
                 <h2>Key Benefits</h2>
                 <span>Design faster with a growing array of beautiful templates</span>
@@ -109,8 +116,6 @@
             </div>
         </div>
     </div>
-        
-        <!-- Section - Mission  -->
         <div class="mission">
             <div class="mission-header">
                 <h2>Front makes you look at things from a different perspective</h2>
@@ -121,13 +126,14 @@
             </div>
             <div class="mission-img"><img src="/Media/banners/banner_one.jpg" alt="Banner banner_one"></div>
         </div>
-        <!-- Section - Why Front? -->
         <div class="why-front-wrapper">
-            <h2>Why front?</h2>
-            <p>
-                Front is an incredibly beautiful, fully responsive, and mobile-first projects on
-                the web -it is the starting point for creative sites
-            </p>
+            <div class="why-front-header">
+                <h2>Why front?</h2>
+                <p>
+                    Front is an incredibly beautiful, fully responsive, and mobile-first projects on
+                    the web -it is the starting point for creative sites
+                </p>
+            </div>
             <div class="options">
                 <div class="option">
                     <i class="fa-solid fa-circle"></i>
@@ -153,7 +159,6 @@
                 </button>
             </div>
         </div>
-        <!-- Section - Testimonials  -->
         <div class="testimonials">
             <div class="testimonial-imgs">
                 <div class="woman-img"><img src="/Media/people/woman_three.jpg" alt="Woman woman_one"></div>
@@ -175,8 +180,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Section - Brands -->
         <div class="brands">
             <div class="brand-header">
                 <h3>TRUSTED BY WORLD'S BEST</h3>
@@ -189,14 +192,12 @@
                 <div class="img"><img src="/Media/company_logos/slack.svg" alt="Slack2"></div>
             </div>
         </div>
-        <!-- Section - Pricing -->
         <div class="pricing-wrapper">
             <div class="pricing-header">
                 <h3>Pricing</h3>
                 <span>No additional cost. Pay for what you use</span>
             </div>
             <div class="pricing-features">
-                <!-- Column One -->
                 <div class="col-one">
                     <div>
                         <h4>59</h4>
@@ -215,9 +216,7 @@
                         <span>No credit card required.</span>
                     </div>
                 </div>
-                <!-- Column Two -->
                 <div class="col-two">
-                    <!-- Row One -->
                     <div class="row-one">
                         <div class="plan-feat-item">
                             <div class="feat-item-section">
@@ -242,7 +241,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Row Two -->
                     <div class="row-two">
                         <div class="plan-feat-item">
                             <div class="feat-item-section">
@@ -262,7 +260,7 @@
                                     <div class="img"><img src="/Media/icons/moneyback.svg" alt="Icon"></div>
                                     <h5>Money back</h5>
                                     <span>
-                                        100% gauranteed money back. No questions asked. 
+                                        100% guaranteed money back. No questions asked. 
                                     </span>
                                 </div>
                             </div>
@@ -270,10 +268,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Section - Hire Us -->
-        <div class="hire-us">
-            <!-- Column One -->
+        </div> -->
+        <!-- <div class="hire-us">
             <div class="col-one">
                 <div class="top">
                     <div class="top-header">
@@ -299,7 +295,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Column Two -->
             <div class="col-two">
                 <form action="action_page.php" method="get">
                     <div class="form-data">
@@ -345,9 +340,9 @@
                     <button>Get Started</button>
                 </form>
             </div>
-        </div>
+        </div> -->
     </div>
-    <footer>
+    <!-- <footer>
         <div class="footer-top">
             <div class="front-details">
                 <div class="img">
@@ -451,6 +446,6 @@
                 </p>
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
