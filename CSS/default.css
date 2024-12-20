@@ -43,6 +43,9 @@ button {
     outline: none;
     background: transparent;
 }
+button:hover {
+    cursor: pointer;
+}
 ul {list-style: none;}
 .img {
     width: 100%;

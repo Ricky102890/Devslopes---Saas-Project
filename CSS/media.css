@@ -147,6 +147,7 @@
     }
     .hero-header {
         height: auto;
+        max-height: 235px;
         margin: 0 auto;
         padding-bottom: 60px;
         display: flex;
@@ -165,13 +166,15 @@
         margin: 0;
         padding: 0;
         width: 334px;
-        font-size: 40px;
+        font-size: 26px;
+        line-height: 31.47px;
         font-weight: 500;
     }
     .hero-header div span {
-        max-width: 328px;
+        max-width: 300px;
         font-size: 14px;
         font-weight: 500;
+        line-height: 16.94px;
         color: var(--font_clr_gray);
     }
     .hero-buttons {
@@ -304,13 +307,14 @@
     .key-benefits {
         width: 100%;
         height: auto;
-        padding: 120px 0px 80px 0px;
+        padding: 40px 0px 40px 0px;
         display: flex;
         flex-direction: column;
         gap: 60px;
     }
     .benefits {
         width: 100%;
+        max-width: 320px;
         height: auto;
         padding: 0;
         display: block;
@@ -388,11 +392,11 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
-        padding: 80px 30px 80px 30px;
+        padding: 0px 30px 80px 30px;
     }
     .mission-header {
         width: 100%;
-        max-width: 650px;
+        max-width: 300px;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -440,18 +444,18 @@
         padding: 0;
         display: flex;
         flex-direction: column;
-        align-items: center;
         margin-left: auto;
         margin-right: auto;
-        text-align: center;
         gap: 40px;
     }
     .why-front-wrapper .why-front-header {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 10px;
     }
     .why-front-wrapper p {
+        min-width: 328px;
         max-width: 360px;
         height: 48px;
         font-size: 16px;
@@ -459,33 +463,31 @@
         line-height: 24px;
         color: var(--font_clr_gray);
         text-align: center;
-        word-wrap: break-word;
+        word-break: keep-all;
         margin: 0 auto;
     }
     .options {
-        width: 100%;
+        width: fit-content;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: 40px;
+        margin: 0 auto 40px
     }
     .option {
         width: 100%;
-        height: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 24px;
         padding: 26px 0;
-        flex: 1;
+        text-align: left;
     }
     .option i {
         font-size: 6px;
         display: block;
         color: blue;
-        margin-bottom: 2rem;
     }
     .option span {
         height: 100%;
@@ -565,7 +567,7 @@
         flex-direction: column;
         padding-right: 30px;
         text-align: center;
-        gap: 50px;
+        gap: 80px;
     }
     .testimonial {
         width: 100%;
@@ -618,7 +620,7 @@
         display: flex;
         flex-direction: column;
         gap: 45px;
-        padding: 40px 0 80px;
+        padding: 40px 0 60px;
     }
     .brand-header {
         width: 100%;
@@ -636,17 +638,17 @@
         width: 100%;
         height: auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         padding: 0 30px;
-        gap: 100px;
+        gap: 22px;
     }
-    .brand .img {
+    .brand-bar .img {
         width: 100%;
-        max-width: 112px;
+        max-width: 96px;
         height: auto;
     }
-    .brand .img img {
+    .brand-bar .img img {
         width: 100%;
         height: auto;
     }
@@ -658,8 +660,8 @@
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
-        gap: 60px;
-        padding-bottom: 120px;
+        gap: 20px;
+        padding-bottom: 20px;
     }
     .pricing-header {
         width: 100%;
@@ -688,11 +690,11 @@
     .pricing-features {
         width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        justify-content: center;
         margin: 0;
-        padding: 0 44px;
+        padding: 40px;
         gap: 30px;
     }
     .pricing-features .col-one {
@@ -767,8 +769,7 @@
         padding: 20px;
     }
     .col-two .row-one .feat-item-section {
-        padding: 20px;
-        flex: 1;
+        padding: 20px 0;
     }
     .col-two .row-one .feat-item-content {
         display: flex;
@@ -855,7 +856,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 60px;
         padding-bottom: 10px;
         background: var(--hireUs_bkg);
     }
@@ -866,11 +866,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 40px 20px 16px;
+        padding: 40px 16px 20px;
         gap: 60px;
     }
     .hire-us .col-one .top {
-        width: 360px;
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -879,13 +879,11 @@
     }
     .hire-us .col-one .top-header {
         width: 100%;
-        max-width: 360px;
         height: auto;
-        margin-right: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        row-gap: 32px;
+        gap: 32px;
     }
     .hire-us .col-one .top h3 {
         width: fit-content;
@@ -895,7 +893,7 @@
         color: var(--White);
     }
     .hire-us .col-one .top p {
-        width: 363px;
+        width: 100%;
         height: auto;
         display: block;
         font-size: 16px;
@@ -1022,7 +1020,7 @@
     }
     .group-three {
         width: 100%;
-        margin: 0;
+        margin: 20px 0 0;
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -1062,6 +1060,7 @@
         font-size: 14px;
         font-weight: 510;
         font-family: var(--font_family_sfPro);
+        text-align: left;
     }
     .hire-us .col-two form .group-five {
         width: 100%;
@@ -1086,6 +1085,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         border-radius: 5px;
         gap: 16px;
     }
@@ -1108,13 +1108,14 @@
         width: fit-content;
         height: 22px;
         padding: 0;
+        margin-left: 4rem;
+        margin-right: auto;
         font-family: var(--font_family_sfPro);
         font-weight: 700;
         line-height: 22px;
         color: var(--font_clr_gray);
         border-bottom: 1px dotted var(--font_clr_gray);
         border-spacing: 2rem;
-        text-align: left;
     }
     .group-five .flex a:nth-child(2) {
         border-color: var(--clr_skyBlue);
@@ -1128,7 +1129,6 @@
         font-weight: 510;
         line-height: 22px;
         font-family: var(--font_family_sfPro);
-        text-wrap: balance;
         gap: 10px;
     }
     .hire-us .col-two form .group-five a:nth-child(2) {display: none;}
@@ -1164,8 +1164,9 @@
     .footer-top {
         width: 100%;
         height: auto;
-        display: grid;
-        grid-template-columns: 1fr 2fr
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
     .footer-top h3 {
         font-family: var(--font_family_sfPro);
@@ -1189,17 +1190,20 @@
     .front-details {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
+        align-items: center;
         gap: 20px;
     }
     .front-details .img {
         width: 100%;
-        height: fit-content;
+        height: auto;
+        margin: 0 auto;
     }
     .front-details .img img {
         width: 100px;
         height: 29.76px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .front-details div{
         width: 100%;
@@ -1214,6 +1218,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
     }
     .front-details div i {
         display: inline-block;
@@ -1232,33 +1237,35 @@
     .link-menu {
         width: 100%;
         height: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: start;
-        gap: 49px;
+        justify-content: center;
+        gap: 30px;
     }
 
     .link-menu-top {
         width: 100%;
-        height: 100%;
+        height: auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
+        align-content: center;
+        gap: 30px;
     }
     .link-menu-btm {
         width: 100%;
-        height: 100%;
+        height: auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
+        gap: 30px;
     }
-
     .link-menu-top > div, .link-menu-btm > div
     {
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         gap: 20px;
         flex: 1;
     }
@@ -1275,6 +1282,7 @@
     {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 10px;
         list-style: none;
     }
@@ -1342,8 +1350,9 @@
         width: 100%;
         height: auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
+        gap: 30px;
     }
     .footer-bar .link-tree {
         display: flex;
@@ -1370,11 +1379,9 @@
     .footer-bar .social-nation {
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-        margin-right: 0;
-        margin-left: auto;
         gap: 20px;
         flex: 1;
     }
@@ -1786,7 +1793,7 @@
         margin: 0;
         padding: 10px 30px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         align-items: center;
         gap: 30px;
     }
