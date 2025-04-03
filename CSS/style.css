@@ -73,7 +73,8 @@ nav button[aria-controls="navbar"] {
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(375px, 1fr)); */
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
     padding: 40px 30px;
@@ -88,7 +89,7 @@ nav button[aria-controls="navbar"] {
     padding-bottom: 60px;
     display: flex;
     flex-direction: column;
-    align-self: center;
+    justify-self: flex-end;
     gap: 30px;
 }
 .hero-header div:nth-child(1) {
