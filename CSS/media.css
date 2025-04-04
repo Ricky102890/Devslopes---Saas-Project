@@ -2,6 +2,7 @@
 @media (max-width: 767px) {
     body {
         width: 100%;
+        margin: 0 auto;
         height: auto;
     }
     .container {
@@ -12,12 +13,11 @@
         align-items: center;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
     }
     /* Header */
     header {
         width: 100%;
+        max-width: 325px;
         display: flex;
         flex-direction: column;
         background-image: url(/Media/backgrounds/background-top.svg);
@@ -188,10 +188,12 @@
         gap: 24px;
     }   
     .hero-buttons button {
+        width: fit-content;
         display: flex;
         align-items: center;
+        justify-content: center;
         margin-right: 24px;
-        padding: 15px 25px;
+        padding: 15px 20px;
         color: var(--White);
         font-size: 12px;
         font-weight: 500;
@@ -258,50 +260,51 @@
         padding: 16px;
         border-radius: 40pc;
         position: absolute;
-        top: 10px;
-        left: 248px;
+        top: 0px;
+        left: 208px;
+
     }
     .hero-icon-container .img-lrg:nth-child(2) {
         padding: 16px;
         border-radius: 40px;
         position: absolute;
         top: 10px;
-        left: 114px;
+        left: 94px;        
     }
     .hero-icon-container .img-lrg:nth-child(3) {
         padding: 16px;
         border-radius: 40px;
         position: absolute;
         top: 219px;
-        left: 239px;
+        left: 190px;
     }
     .hero-icon-container .img-sm:nth-child(4) {
         padding: 10px;
         border-radius: 30px;
         position: absolute;
         top: 209px;
-        left: 106px;
+        left: 76px;
     }
     .hero-icon-container .img-sm:nth-child(5) {
         padding: 10px;
         border-radius: 30px;
         position: absolute;
         top: 10px;
-        left: 0px;
+        left: -20px;
     }
     .hero-icon-container .img-lrg:nth-child(6) {
         padding: 16px;
         border-radius: 40px;
         position: absolute;
         top: 99px;
-        left: 0px;
+        left: -10px;
     }
     .hero-icon-container .img-lrg:nth-child(7) {
         padding: 16px;
         border-radius: 40px;
         position: absolute;
         top: 99px;
-        left: 184px;
+        left: 148px;
     }
     /* Section - Benefits */
     .key-benefits {
@@ -317,7 +320,9 @@
         max-width: 320px;
         height: auto;
         padding: 0;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -404,7 +409,7 @@
         text-align: center;
         background: var(--bkg_offWhite);
         margin: 26px 0;
-        padding: 27px 30px;
+        padding: 27px 23px;
         gap: 26px;
         flex: 1;
     }
@@ -438,7 +443,6 @@
     /* Section - Why Front? */
     .why-front-wrapper {
         width: 100%;
-        min-width: 375px;
         height: auto;
         margin: 0;
         padding: 0;
@@ -449,21 +453,20 @@
         gap: 40px;
     }
     .why-front-wrapper .why-front-header {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
     .why-front-wrapper p {
-        min-width: 328px;
-        max-width: 360px;
-        height: 48px;
+        width: 100%;
+        max-width: 280px;
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
         color: var(--font_clr_gray);
         text-align: center;
-        word-break: keep-all;
         margin: 0 auto;
     }
     .options {
@@ -582,7 +585,7 @@
         height: auto;
     }
     .testimonial h3 {
-        width: 328px;
+        width: 300px;
         height: 128px;
         font-size: 22px;
         font-weight: 500;
@@ -628,7 +631,9 @@
         flex: 1;
     }
     .brand-header h3 {
+        width: 300px;
         text-align: center;
+        margin: 0 auto;
         padding: 10px 0;
         font-size: 20px;
         font-weight: 700;
@@ -694,7 +699,7 @@
         grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
         justify-content: center;
         margin: 0;
-        padding: 40px;
+        padding: 40px 40px 0px;
         gap: 30px;
     }
     .pricing-features .col-one {
@@ -761,7 +766,9 @@
         line-height: 14.5px;
         color: var(--font_clr_gray);
     }
-    .col-two {gap: 10px;}
+    .col-two {
+        gap: 10px;
+    }
     .col-two .row-one {gap: 10px;}
     .col-two .row-one .plan-feat-item {
         display: flex;
@@ -911,7 +918,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 32px;
+        gap: 16px;
     }
     .hire-us .col-one .top h3 {
         width: fit-content;
@@ -995,12 +1002,13 @@
     }
     .hire-us .col-two {
         width: 100%;
-        padding: 30px;
         gap: 10px;
     }
     .hire-us .col-two form {
         width: 100%;
+        max-width: 300px;
         height: auto;
+        margin: 0 auto;
         padding: 30px;
         display: flex;
         flex-direction: column;
@@ -1019,8 +1027,11 @@
     }
     .form-data input {
         width: 100%;
-        border: none;
+        border: 1px solid rgba(0, 0, 0, .1);
         padding: 10px 10px 10px 0;
+    }
+    .form-data input::placeholder {
+        padding: .35rem;
     }
     .hire-us .col-two div p {
         font-size: 16px;
@@ -1052,7 +1063,7 @@
         padding: 0;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 0px;
     }
     .hire-us .col-two form .group-three select {
         display: flex;
@@ -1080,6 +1091,7 @@
     }
     .hire-us .col-two form .group-four textarea {
         width: 100%;
+        max-width: 210px;
         height: auto;
         max-height: 150px;
         padding: 10px;
@@ -1089,14 +1101,15 @@
         font-weight: 510;
         font-family: var(--font_family_sfPro);
         text-align: left;
+        line-height: 22px;
     }
     .hire-us .col-two form .group-five {
         width: 100%;
-        max-width: 360px;
+        max-width: 210px;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 16px;
+        gap: 26px;
     }
     .hire-us .col-two form .group-five input {
         width: 18px;
@@ -1110,6 +1123,7 @@
     }
     .hire-us .col-two form .group-five > div {
         width: 100%;
+        max-width: 210px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1122,7 +1136,7 @@
         margin-bottom: 16px;
     }
     .group-five .flex{
-        width: 360px;
+        width: 280px;
         height: auto;
         display: flex;
         flex-direction: row;
@@ -1135,8 +1149,8 @@
         width: fit-content;
         height: 22px;
         padding: 0;
-        margin-top: 1rem;
-        margin-left: 4rem;
+        margin-top: 1.5rem;
+        margin-left: 2rem;
         margin-right: auto;
         font-family: var(--font_family_sfPro);
         font-weight: 700;
@@ -1219,6 +1233,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 20px;
     }
     .front-details .img {
@@ -1237,6 +1252,7 @@
         height: auto;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 22px;
     }
     .front-details div div {
@@ -1807,13 +1823,14 @@
         margin: 0;
         padding: 10px 30px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         align-items: center;
         gap: 30px;
     }
     .benefit-item {
         width: 100%;
         height: auto;
+        min-height: 220px;
         margin: 0 20px;
         padding: 20px;
         text-align: left;
@@ -1874,7 +1891,6 @@
     }
     .mission-header {
         width: 100%;
-        max-width: 650px;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -1887,6 +1903,7 @@
         flex: 1;
     }
     .mission-header h2 {
+        max-width: 650px;
         font-size: 26px;
         font-weight: 500;
         margin-bottom: 11px;
@@ -1905,13 +1922,11 @@
     }
     .mission .mission-img {
         width: 100%;
-        max-width: 504px;
-        max-height: 353px;
         flex: 1;
     }
     .mission .mission-img img {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
     /* Section - Why Front? */
     .why-front-wrapper {
@@ -1961,7 +1976,7 @@
         justify-content: center;
         margin: 0;
         padding: 26px 0;
-        outline: 1px solid #000000;
+        outline: .1px solid rgb(0, 0, 0, .1);
         flex: 1;
     }
     .option i {
@@ -2494,11 +2509,14 @@
     }
     .form-data input {
         width: 100%;
-        border: none;
+        border: 1px solid rgba(0, 0, 0, .1);
         padding: 10px;
         font-size: 14px;
         line-height: 24px;
         font-weight: 510;
+    }
+    .form-data input::placeholder {
+        padding: .35rem;
     }
     .hire-us .col-two div p {
         font-size: 16px;
@@ -4391,8 +4409,8 @@
         color: var(--font_clr_gray);
     }
 }
-/* 144p/2160px - XL/XXL Viewports - Large Desktop */
-@media (min-width: 2160px) {
+/* 1440p/2160px - XL/XXL Viewports - Large Desktop */
+@media (min-width: 1024px) {
     /* Header */
     header {
         width: 100%;
@@ -5332,7 +5350,7 @@
         gap: 20px;
         border: 1px solid #E6E8F2;
     }
-    .form-data input {border: none;}
+    .hire-us .col-two .form-data input {border:1px solid rgba(0, 0, 0, .1);padding: .35rem;};
     .hire-us .col-two div p {
         font-size: 16px;
         font-weight: 700;
@@ -5403,7 +5421,7 @@
     .hire-us .col-two form .group-five {
         display: grid;
         grid-template-columns: 1fr 8fr;
-        gap: 16px;
+        gap: 26px;
     }
     .hire-us .col-two form .group-five input {
         width: 18px;
@@ -5425,6 +5443,7 @@
         width: 100%;
         height: auto;
         display: flex;
+        margin-top: 1.5rem;
         flex-direction: row;
         align-items: center;
         gap: 28px;
@@ -5489,6 +5508,7 @@
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        justify-items: flex-start;
         gap: 40px;
     }
     .footer-top h3 {
@@ -5554,6 +5574,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: flex-start;
         gap: 0px;
     }
 
@@ -5562,7 +5583,8 @@
         height: 100%;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: center;
         gap: 49;
     }
     .link-menu-btm {
@@ -5570,7 +5592,7 @@
         height: 100%;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         gap: 49px;
     }
 
